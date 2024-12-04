@@ -3,15 +3,25 @@ let Program = class
 {
     public static main(): void
     {
-        this.Element.updateParaText("Hello World from TypeScript");        
+        App.Page.Para.updateText("Hello, World!");       
     }
-    public static Element = class
+}
+
+let App = class
+{
+    public static Page = class
     {
-        public static readonly para: HTMLParagraphElement = document.getElementById("para") as HTMLParagraphElement;
-        public static readonly body: HTMLBodyElement = document.getElementById("body") as HTMLBodyElement;
-        public static updateParaText(text: string): void
+        public static Para = class
         {
-            this.para.innerText = text;
+            public static readonly element: HTMLParagraphElement = document.getElementById("para") as HTMLParagraphElement;
+            public static updateText(text: string): void
+            {
+                this.element.innerText = text;
+            }
+        }
+        public static Body = class
+        {
+            public static readonly element: HTMLBodyElement = document.getElementById("body") as HTMLBodyElement;
         }
     }
 }

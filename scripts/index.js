@@ -1,14 +1,20 @@
 "use strict";
 let Program = class {
     static main() {
-        this.Element.updateParaText("Hello World from TypeScript");
+        App.Page.Para.updateText("Hello, World!");
     }
-    static Element = class {
-        static para = document.getElementById("para");
-        static body = document.getElementById("body");
-        static updateParaText(text) {
-            this.para.innerText = text;
-        }
+};
+let App = class {
+    static Page = class {
+        static Para = class {
+            static element = document.getElementById("para");
+            static updateText(text) {
+                this.element.innerText = text;
+            }
+        };
+        static Body = class {
+            static element = document.getElementById("body");
+        };
     };
 };
 Program.main();

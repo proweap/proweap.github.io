@@ -1,10 +1,19 @@
 declare let Program: {
     new (): {};
     main(): void;
-    Element: {
+};
+declare let App: {
+    new (): {};
+    Page: {
         new (): {};
-        readonly para: HTMLParagraphElement;
-        readonly body: HTMLBodyElement;
-        updateParaText(text: string): void;
+        Para: {
+            new (): {};
+            readonly element: HTMLParagraphElement;
+            updateText(text: string): void;
+        };
+        Body: {
+            new (): {};
+            readonly element: HTMLBodyElement;
+        };
     };
 };
