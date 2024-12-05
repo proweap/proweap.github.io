@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautifully designed single-page mobile-optimized Progressive Web App.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="serviceWorkerRegistration.js" type="module"></script>
+  <title>Sample PWA</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <h1 class="logo">Sample PWA</h1>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2 class="hero-title">Welcome to Your Mobile App</h2>
+      <p class="hero-description">Experience fast, responsive, and sleek design tailored for mobile users.</p>
+      <button class="hero-button">Learn More</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-description">
+        Our single-page web app is optimized for seamless mobile browsing. Explore our clean design and enjoy an intuitive user experience.
+      </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+      <h2 class="section-title">Features</h2>
+      <ul class="features-list">
+        <li class="feature-item">Mobile-first design</li>
+        <li class="feature-item">Progressive Web App capabilities</li>
+        <li class="feature-item">Fast and lightweight</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <form id="contactForm" class="contact-form">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-input" required placeholder="Your Name">
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input" required placeholder="Your Email">
+
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Sample PWA. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

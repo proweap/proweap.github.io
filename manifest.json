@@ -1,0 +1,41 @@
+{
+  "name": "Mobile Meal Planner",
+  "short_name": "MealPlanner",
+  "description": "A mobile-friendly progressive web app for planning and organizing weekly meals.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#4CAF50",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "android/android-launchericon-512-512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "android/android-launchericon-192-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android/android-launchericon-144-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "android/android-launchericon-96-96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "android/android-launchericon-72-72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "android/android-launchericon-48-48.png",
+      "sizes": "48x48"
+    }
+  ],
+  "categories": ["health", "food", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
